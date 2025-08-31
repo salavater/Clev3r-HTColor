@@ -2,9 +2,9 @@
 # Eng:
 
 HiTechnic color snesor v2 works using the i2c communication protocol and has 3 operating modes:
-  0x00 (0) - Active standart mode /
-  0x01 (1) - Passive raw mode /
-  0x03 (3) - Active raw mode /
+  0x00 (0) - Active standart mode  
+  0x01 (1) - Passive raw mode  
+  0x03 (3) - Active raw mode  
 
 you can also switch the hertz:
  0x35 (53) - 50 Hz
