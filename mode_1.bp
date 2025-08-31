@@ -1,0 +1,22 @@
+'This program displays the values ​​from the RAW PASSIVE mode of the hiTechnic color sensor v2
+'Make sure that the module and the program are in the same folder
+
+import "HTColor"
+
+HTColor.set50Hz(2)
+
+While 1=1
+  
+  LCD.Clear()
+  HTColor.getPassiveRawRGBW(2, values)
+  
+  LCD.Text(1,121,1,1,"mode: 1")
+  
+  LCD.Text(1,1,1,1,"  raw red " + values[0])
+  LCD.Text(1,1,11,1,"raw green " + values[1])
+  LCD.Text(1,1,21,1," raw blue " + values[2])
+  LCD.Text(1,1,31,1,"raw white " + values[3])
+  
+  Program.Delay(75)
+  
+EndWhile
